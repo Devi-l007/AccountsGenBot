@@ -20,7 +20,7 @@ async def _(event):
     if not is_added(event.sender_id):
         add_user(event.sender_id)
     if START_MSG is None:
-        strt = "Hey {mention}, welcome to my Account Generator Bot!"
+        strt = "Hey {mention}, welcome to my Netlix Generator Bot!"
     else:
         strt = START_MSG
     if chk is True:
@@ -31,5 +31,5 @@ async def _(event):
                         ])
     else:
         st_msg = strt.format(mention=xxx.user.first_name)
-        await event.reply("{}\n\nOops! You need to join my channel so as to use me!".format(st_msg), buttons=[Button.url("Join My Channel", url=ltc)])
+        await event.reply("{}\n\nOops! You need to join the given channel so as to use me!".format(st_msg), buttons=[Button.url("Join My Channel", url=ltc)])
 
