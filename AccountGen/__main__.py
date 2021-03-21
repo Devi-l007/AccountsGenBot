@@ -27,7 +27,7 @@ for name in files:
         load_plugins(plugin_name.replace(".py", ""))
     
 print("Successfully deployed AccountGenerator Bot!")
-print("Enjoy! Do visit @BotzHub")
+print("Enjoy! Do visit @TheDynamicNetwork")
 
 if __name__ == "__main__":
     BotzHub.run_until_disconnected()
