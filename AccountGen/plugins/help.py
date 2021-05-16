@@ -16,6 +16,6 @@ async def helper(event):
     text="I am an Netflix Generator Bot!\nI generate working accounts for you.\n\nClick generate accounts to get your account!! Make sure to join my channel and support us!"
     await event.edit(text,
                      buttons=[
-                         [Button.url("Channel", url=ltc), Button.url("Tricks", url="https://t.me/DynamicTricks")],
+                         [Button.url("Channel", url=ltc)],
                          [Button.inline("Generate Accounts", data="gen")]
                      ])
